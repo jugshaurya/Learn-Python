@@ -6,9 +6,9 @@ def printTree_preorder(root):
 
     print(root.data, ' : ', end = '')
     if root.left != None:
-        print(root.left.data, end = ',')
+        print('L' , root.left.data, end = ',')
     if root.right != None:
-        print(root.right.data, end = ' ')
+        print('R' , root.right.data, end = ' ')
     print()
     
     printTree_preorder(root.left)
