@@ -33,11 +33,6 @@ def length(head):
     return count
 
 def append_LinkedList(head,n) :
-    #  Given a linked list and an integer n, append the last n elements of the LL
-    #  to front. 
-    #############################
-    # PLEASE ADD YOUR CODE HERE #
-    #############################
     start_len = length(head)
     if head == None:
         return head
@@ -77,10 +72,7 @@ def printll(head):
         head = head.next
     print()
 
-# Main
-# Read the link list elements including -1
-arr=list(int(i) for i in input().strip().split(' '))
-# Create a Linked list after removing -1 from list
+arr=list(int(i) for i in input().split())
 l = ll(arr[:-1])
 i=int(input())
 l = append_LinkedList(l, i)

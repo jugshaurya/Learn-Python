@@ -38,12 +38,10 @@ def printll(head):
         head = head.next
     print()
 
-# Main
 # Read the link list elements including -1
 import sys
 sys.setrecursionlimit(11000)
-arr=list(int(i) for i in input().strip().split(' '))
-# Create a Linked list after removing -1 from list
+arr=list(int(i) for i in input().split())
 l = ll(arr[:-1])
 l = eliminate_duplicate(l)
 printll(l)

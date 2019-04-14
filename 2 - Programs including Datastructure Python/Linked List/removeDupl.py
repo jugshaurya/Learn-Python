@@ -16,16 +16,16 @@ class Node:
         self.data = data
         self.next = None
 
-# def eliminate_duplicate_recursive(head):
+def eliminate_duplicate_recursive(head):
     
-#     if head == None or head.next == None:
-#         return head
+    if head == None or head.next == None:
+        return head
     
-#     if head.data == head.next.data:
-#         return eliminate_duplicate_recursive(head.next)
-#     else:
-#         head.next = eliminate_duplicate_recursive(head.next)  
-#         return head
+    if head.data == head.next.data:
+        return eliminate_duplicate_recursive(head.next)
+    else:
+        head.next = eliminate_duplicate_recursive(head.next)  
+        return head
 
 def eliminate_duplicate(head):
     if head==None or head.next == None:
@@ -57,10 +57,8 @@ def printll(head):
         head = head.next
     print()
 
-# Main
 # Read the link list elements including -1
-arr=list(int(i) for i in input().strip().split(' '))
-# Create a Linked list after removing -1 from list
+arr=list(int(i) for i in input().split())
 l = ll(arr[:-1])
 l = eliminate_duplicate(l)
 printll(l)
