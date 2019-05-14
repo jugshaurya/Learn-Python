@@ -63,3 +63,5 @@ printTree_preorder(root)
 root = delete_leaf_nodes(root)
 print('After the leafs are deleted : ')
 printTree_preorder(root)
+
+
