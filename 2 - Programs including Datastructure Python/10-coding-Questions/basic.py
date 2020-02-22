@@ -47,9 +47,12 @@
 # print(a)
 
 
-d = {'a': 4}
-print(d.get('e'))
-if(d.get('e')):
-    print("szd")
-else:
-    print('sfjhal')
+# d = {'a': 4}
+# print(d.get('e'))
+# if(d.get('e')):
+#     print("szd")
+# else:
+#     print('sfjhal')
+
+l = [2, 3, 4]
+print(l[4:])
