@@ -1,0 +1,24 @@
+## Finding min element in a dictionary
+
+minEle = min(d, key=d.get)
+print(d[minEle])
+
+### deep copy a 2d list
+import copy
+        visited = copy.deepcopy(grid)
+        print(visited)
+
+### dont use list as queue in python because pop(0) is O(n)
+use - 
+from collections import deque
+q=deque()
+q.append() // enqueue
+q.popleft() // dequeue
+
+but for stack list are fine
+but can also use 
+from collections import deque
+s=deque()
+s.append() // push
+s.pop() // pop
+
